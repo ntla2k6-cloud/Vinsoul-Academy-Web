@@ -1,0 +1,501 @@
+{
+  "students": [
+    {
+      "id": 1777179173143,
+      "name": "Lan Anh",
+      "dob": "",
+      "parent": "B",
+      "phone": "0123456789",
+      "subject": "Piano",
+      "pkg": "Lớp 3-1 · 3 tháng/24 buổi",
+      "classid": "",
+      "start": "2026-04-11",
+      "end": "2026-07-20",
+      "payment": "Đã Chuyển Khoản",
+      "amount": 6800000,
+      "paydate": "2026-04-10",
+      "note": ""
+    }
+  ],
+  "staff": [],
+  "leads": [],
+  "classes": [
+    {
+      "id": 1777179113085,
+      "code": "Piano",
+      "name": "Piano A1",
+      "subject": "Guitar",
+      "teacher": "Thầy Thiệu",
+      "room": "",
+      "note": "",
+      "schedule": [
+        {
+          "day": "Thứ 2",
+          "start": "08:00",
+          "end": "09:00"
+        },
+        {
+          "day": "Thứ 4",
+          "start": "08:00",
+          "end": "09:00"
+        }
+      ]
+    }
+  ],
+  "attendance": [],
+  "makeups": [],
+  "templates": [
+    {
+      "id": 1777178994762,
+      "course": "Guitar",
+      "emoji": "🎸",
+      "content": "🎸 GUITAR — LỚP NHÓM 3 HỌC VIÊN (3 THÁNG)\n💰 Học phí: 5.400.000đ / khóa\n⏱ Thời lượng: 3 tháng (24 buổi)\n📅 Tần suất: 2 buổi/tuần\n💳 Đóng 2 lần: 2.700.000đ/lần\n\n📚 Nội dung khóa học:\n1️⃣ Làm quen guitar và kỹ thuật cơ bản\n2️⃣ Học hợp âm, tiết tấu\n3️⃣ Học cách đệm các bài hát quen thuộc\n4️⃣ Thực hành đệm và biểu diễn các bài yêu thích\n\n✨ Sau khóa học, học viên có thể tự đệm và trình diễn tự tin cùng nhạc cụ.\nAnh/chị có thể tham gia buổi học trải nghiệm trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994763,
+      "course": "Guitar",
+      "emoji": "🎸",
+      "content": "🎸 GUITAR — LỚP NHÓM 3 HỌC VIÊN (1 THÁNG)\n💰 Học phí: 2.000.000đ / tháng\n⏱ Thời lượng: 1 tháng (8 buổi)\n📅 Tần suất: 2 buổi/tuần\n\n📚 Nội dung khóa học:\n1️⃣ Làm quen guitar và kỹ thuật cơ bản\n2️⃣ Học hợp âm, tiết tấu\n3️⃣ Học cách đệm các bài hát quen thuộc\n4️⃣ Thực hành đệm và biểu diễn các bài yêu thích\n\n✨ Sau khóa học, học viên có thể tự đệm và trình diễn tự tin cùng nhạc cụ.\nAnh/chị có thể tham gia buổi học trải nghiệm trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994764,
+      "course": "Guitar",
+      "emoji": "🎸",
+      "content": "🎸 GUITAR — LỚP 2 HỌC VIÊN (3 THÁNG)\n💰 Học phí: 7.200.000đ / khóa\n⏱ Thời lượng: 3 tháng (24 buổi)\n📅 Tần suất: 2 buổi/tuần\n💳 Đóng 2 lần: 3.600.000đ/lần\n\n📚 Nội dung khóa học:\n1️⃣ Làm quen guitar và kỹ thuật cơ bản\n2️⃣ Học hợp âm, tiết tấu\n3️⃣ Học cách đệm các bài hát quen thuộc\n4️⃣ Thực hành đệm và biểu diễn các bài yêu thích\n\n✨ Sau khóa học, học viên có thể tự đệm và trình diễn tự tin cùng nhạc cụ.\nAnh/chị có thể tham gia buổi học trải nghiệm trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994765,
+      "course": "Guitar",
+      "emoji": "🎸",
+      "content": "🎸 GUITAR — LỚP 2 HỌC VIÊN (1 THÁNG)\n💰 Học phí: 2.600.000đ / tháng\n⏱ Thời lượng: 1 tháng (8 buổi)\n📅 Tần suất: 2 buổi/tuần\n\n📚 Nội dung khóa học:\n1️⃣ Làm quen guitar và kỹ thuật cơ bản\n2️⃣ Học hợp âm, tiết tấu\n3️⃣ Học cách đệm các bài hát quen thuộc\n4️⃣ Thực hành đệm và biểu diễn các bài yêu thích\n\n✨ Sau khóa học, học viên có thể tự đệm và trình diễn tự tin cùng nhạc cụ.\nAnh/chị có thể tham gia buổi học trải nghiệm trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994766,
+      "course": "Guitar",
+      "emoji": "🎸",
+      "content": "🎸 GUITAR — LỚP 1-1 CÁ NHÂN (3 THÁNG)\n💰 Học phí: 12.000.000đ / khóa\n⏱ Thời lượng: 3 tháng (24 buổi)\n📅 Tần suất: 2 buổi/tuần\n💳 Đóng 2 lần: 6.000.000đ/lần\n\n📚 Nội dung khóa học:\n1️⃣ Làm quen guitar và kỹ thuật cơ bản\n2️⃣ Học hợp âm, tiết tấu\n3️⃣ Học cách đệm các bài hát quen thuộc\n4️⃣ Thực hành đệm và biểu diễn các bài yêu thích\n\n✨ Sau khóa học, học viên có thể tự đệm và trình diễn tự tin cùng nhạc cụ.\nAnh/chị có thể tham gia buổi học trải nghiệm (500.000đ) trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994767,
+      "course": "Guitar",
+      "emoji": "🎸",
+      "content": "🎸 GUITAR — LỚP 1-1 CÁ NHÂN (1 THÁNG)\n💰 Học phí: 4.200.000đ / tháng\n⏱ Thời lượng: 1 tháng (8 buổi)\n📅 Tần suất: 2 buổi/tuần\n\n📚 Nội dung khóa học:\n1️⃣ Làm quen guitar và kỹ thuật cơ bản\n2️⃣ Học hợp âm, tiết tấu\n3️⃣ Học cách đệm các bài hát quen thuộc\n4️⃣ Thực hành đệm và biểu diễn các bài yêu thích\n\n✨ Sau khóa học, học viên có thể tự đệm và trình diễn tự tin cùng nhạc cụ.\nAnh/chị có thể tham gia buổi học trải nghiệm (500.000đ) trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994768,
+      "course": "Luyện Thi Guitar",
+      "emoji": "🏆",
+      "content": "🎸 LUYỆN THI GUITAR — NHÓM 3 HỌC VIÊN (3 THÁNG)\n💰 Học phí: 6.000.000đ / khóa\n⏱ Thời lượng: 3 tháng (24 buổi)\n📅 Tần suất: 2 buổi/tuần\n💳 Đóng 2 lần: 3.000.000đ/lần\n\n📚 Nội dung khóa học:\n1️⃣ Ôn luyện kỹ thuật guitar chuyên sâu\n2️⃣ Học và luyện các bài thi theo giáo trình chuẩn\n3️⃣ Rèn luyện tốc độ, độ chính xác và biểu cảm\n4️⃣ Thực hành thi thử và nhận xét chi tiết\n\n✨ Sau khóa học, học viên sẵn sàng tham gia các kỳ thi guitar với kỹ thuật vững chắc.\nAnh/chị có thể tham gia buổi học trải nghiệm trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994769,
+      "course": "Luyện Thi Guitar",
+      "emoji": "🏆",
+      "content": "🎸 LUYỆN THI GUITAR — NHÓM 3 HỌC VIÊN (1 THÁNG)\n💰 Học phí: 2.200.000đ / tháng\n⏱ Thời lượng: 1 tháng (8 buổi)\n📅 Tần suất: 2 buổi/tuần\n\n📚 Nội dung khóa học:\n1️⃣ Ôn luyện kỹ thuật guitar chuyên sâu\n2️⃣ Học và luyện các bài thi theo giáo trình chuẩn\n3️⃣ Rèn luyện tốc độ, độ chính xác và biểu cảm\n4️⃣ Thực hành thi thử và nhận xét chi tiết\n\n✨ Sau khóa học, học viên sẵn sàng tham gia các kỳ thi guitar với kỹ thuật vững chắc.\nAnh/chị có thể tham gia buổi học trải nghiệm trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994770,
+      "course": "Luyện Thi Guitar",
+      "emoji": "🏆",
+      "content": "🎸 LUYỆN THI GUITAR — LỚP 2 HỌC VIÊN (3 THÁNG)\n💰 Học phí: 8.400.000đ / khóa\n⏱ Thời lượng: 3 tháng (24 buổi)\n📅 Tần suất: 2 buổi/tuần\n💳 Đóng 2 lần: 4.200.000đ/lần\n\n📚 Nội dung khóa học:\n1️⃣ Ôn luyện kỹ thuật guitar chuyên sâu\n2️⃣ Học và luyện các bài thi theo giáo trình chuẩn\n3️⃣ Rèn luyện tốc độ, độ chính xác và biểu cảm\n4️⃣ Thực hành thi thử và nhận xét chi tiết\n\n✨ Sau khóa học, học viên sẵn sàng tham gia các kỳ thi guitar với kỹ thuật vững chắc.\nAnh/chị có thể tham gia buổi học trải nghiệm trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994771,
+      "course": "Luyện Thi Guitar",
+      "emoji": "🏆",
+      "content": "🎸 LUYỆN THI GUITAR — LỚP 2 HỌC VIÊN (1 THÁNG)\n💰 Học phí: 3.000.000đ / tháng\n⏱ Thời lượng: 1 tháng (8 buổi)\n📅 Tần suất: 2 buổi/tuần\n\n📚 Nội dung khóa học:\n1️⃣ Ôn luyện kỹ thuật guitar chuyên sâu\n2️⃣ Học và luyện các bài thi theo giáo trình chuẩn\n3️⃣ Rèn luyện tốc độ, độ chính xác và biểu cảm\n4️⃣ Thực hành thi thử và nhận xét chi tiết\n\n✨ Sau khóa học, học viên sẵn sàng tham gia các kỳ thi guitar với kỹ thuật vững chắc.\nAnh/chị có thể tham gia buổi học trải nghiệm trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994772,
+      "course": "Luyện Thi Guitar",
+      "emoji": "🏆",
+      "content": "🎸 LUYỆN THI GUITAR — LỚP 1-1 CÁ NHÂN (3 THÁNG)\n💰 Học phí: 12.000.000đ / khóa\n⏱ Thời lượng: 3 tháng (24 buổi)\n📅 Tần suất: 2 buổi/tuần\n💳 Đóng 2 lần: 6.000.000đ/lần\n\n📚 Nội dung khóa học:\n1️⃣ Ôn luyện kỹ thuật guitar chuyên sâu\n2️⃣ Học và luyện các bài thi theo giáo trình chuẩn\n3️⃣ Rèn luyện tốc độ, độ chính xác và biểu cảm\n4️⃣ Thực hành thi thử và nhận xét chi tiết\n\n✨ Sau khóa học, học viên sẵn sàng tham gia các kỳ thi guitar với kỹ thuật vững chắc.\nAnh/chị có thể tham gia buổi học trải nghiệm (500.000đ) trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994773,
+      "course": "Luyện Thi Guitar",
+      "emoji": "🏆",
+      "content": "🎸 LUYỆN THI GUITAR — LỚP 1-1 CÁ NHÂN (1 THÁNG)\n💰 Học phí: 4.200.000đ / tháng\n⏱ Thời lượng: 1 tháng (8 buổi)\n📅 Tần suất: 2 buổi/tuần\n\n📚 Nội dung khóa học:\n1️⃣ Ôn luyện kỹ thuật guitar chuyên sâu\n2️⃣ Học và luyện các bài thi theo giáo trình chuẩn\n3️⃣ Rèn luyện tốc độ, độ chính xác và biểu cảm\n4️⃣ Thực hành thi thử và nhận xét chi tiết\n\n✨ Sau khóa học, học viên sẵn sàng tham gia các kỳ thi guitar với kỹ thuật vững chắc.\nAnh/chị có thể tham gia buổi học trải nghiệm (500.000đ) trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994774,
+      "course": "Violin",
+      "emoji": "🎻",
+      "content": "🎻 VIOLIN — LỚP NHÓM 3 HỌC VIÊN (3 THÁNG)\n💰 Học phí: 5.400.000đ / khóa\n⏱ Thời lượng: 3 tháng (24 buổi)\n📅 Tần suất: 2 buổi/tuần\n💳 Đóng 2 lần: 2.700.000đ/lần\n\n📚 Nội dung khóa học:\n1️⃣ Làm quen violin và tư thế cầm đàn đúng\n2️⃣ Học kỹ thuật kéo vĩ cung cơ bản\n3️⃣ Học đọc nhạc và luyện tập giai điệu\n4️⃣ Thực hành biểu diễn các bản nhạc đơn giản\n\n✨ Sau khóa học, học viên có thể chơi được các bản nhạc cơ bản và tự tin biểu diễn.\nAnh/chị có thể tham gia buổi học trải nghiệm trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994775,
+      "course": "Violin",
+      "emoji": "🎻",
+      "content": "🎻 VIOLIN — LỚP NHÓM 3 HỌC VIÊN (1 THÁNG)\n💰 Học phí: 2.000.000đ / tháng\n⏱ Thời lượng: 1 tháng (8 buổi)\n📅 Tần suất: 2 buổi/tuần\n\n📚 Nội dung khóa học:\n1️⃣ Làm quen violin và tư thế cầm đàn đúng\n2️⃣ Học kỹ thuật kéo vĩ cung cơ bản\n3️⃣ Học đọc nhạc và luyện tập giai điệu\n4️⃣ Thực hành biểu diễn các bản nhạc đơn giản\n\n✨ Sau khóa học, học viên có thể chơi được các bản nhạc cơ bản và tự tin biểu diễn.\nAnh/chị có thể tham gia buổi học trải nghiệm trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994776,
+      "course": "Violin",
+      "emoji": "🎻",
+      "content": "🎻 VIOLIN — LỚP 2 HỌC VIÊN (3 THÁNG)\n💰 Học phí: 7.200.000đ / khóa\n⏱ Thời lượng: 3 tháng (24 buổi)\n📅 Tần suất: 2 buổi/tuần\n💳 Đóng 2 lần: 3.600.000đ/lần\n\n📚 Nội dung khóa học:\n1️⃣ Làm quen violin và tư thế cầm đàn đúng\n2️⃣ Học kỹ thuật kéo vĩ cung cơ bản\n3️⃣ Học đọc nhạc và luyện tập giai điệu\n4️⃣ Thực hành biểu diễn các bản nhạc đơn giản\n\n✨ Sau khóa học, học viên có thể chơi được các bản nhạc cơ bản và tự tin biểu diễn.\nAnh/chị có thể tham gia buổi học trải nghiệm trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994777,
+      "course": "Violin",
+      "emoji": "🎻",
+      "content": "🎻 VIOLIN — LỚP 2 HỌC VIÊN (1 THÁNG)\n💰 Học phí: 2.600.000đ / tháng\n⏱ Thời lượng: 1 tháng (8 buổi)\n📅 Tần suất: 2 buổi/tuần\n\n📚 Nội dung khóa học:\n1️⃣ Làm quen violin và tư thế cầm đàn đúng\n2️⃣ Học kỹ thuật kéo vĩ cung cơ bản\n3️⃣ Học đọc nhạc và luyện tập giai điệu\n4️⃣ Thực hành biểu diễn các bản nhạc đơn giản\n\n✨ Sau khóa học, học viên có thể chơi được các bản nhạc cơ bản và tự tin biểu diễn.\nAnh/chị có thể tham gia buổi học trải nghiệm trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994778,
+      "course": "Violin",
+      "emoji": "🎻",
+      "content": "🎻 VIOLIN — LỚP 1-1 CÁ NHÂN (3 THÁNG)\n💰 Học phí: 12.000.000đ / khóa\n⏱ Thời lượng: 3 tháng (24 buổi)\n📅 Tần suất: 2 buổi/tuần\n💳 Đóng 2 lần: 6.000.000đ/lần\n\n📚 Nội dung khóa học:\n1️⃣ Làm quen violin và tư thế cầm đàn đúng\n2️⃣ Học kỹ thuật kéo vĩ cung cơ bản\n3️⃣ Học đọc nhạc và luyện tập giai điệu\n4️⃣ Thực hành biểu diễn các bản nhạc đơn giản\n\n✨ Sau khóa học, học viên có thể chơi được các bản nhạc cơ bản và tự tin biểu diễn.\nAnh/chị có thể tham gia buổi học trải nghiệm (500.000đ) trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994779,
+      "course": "Violin",
+      "emoji": "🎻",
+      "content": "🎻 VIOLIN — LỚP 1-1 CÁ NHÂN (1 THÁNG)\n💰 Học phí: 4.200.000đ / tháng\n⏱ Thời lượng: 1 tháng (8 buổi)\n📅 Tần suất: 2 buổi/tuần\n\n📚 Nội dung khóa học:\n1️⃣ Làm quen violin và tư thế cầm đàn đúng\n2️⃣ Học kỹ thuật kéo vĩ cung cơ bản\n3️⃣ Học đọc nhạc và luyện tập giai điệu\n4️⃣ Thực hành biểu diễn các bản nhạc đơn giản\n\n✨ Sau khóa học, học viên có thể chơi được các bản nhạc cơ bản và tự tin biểu diễn.\nAnh/chị có thể tham gia buổi học trải nghiệm (500.000đ) trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994780,
+      "course": "Luyện Thi Violin",
+      "emoji": "🏆",
+      "content": "🎻 LUYỆN THI VIOLIN — NHÓM 3 HỌC VIÊN (3 THÁNG)\n💰 Học phí: 6.000.000đ / khóa\n⏱ Thời lượng: 3 tháng (24 buổi)\n📅 Tần suất: 2 buổi/tuần\n💳 Đóng 2 lần: 3.000.000đ/lần\n\n📚 Nội dung khóa học:\n1️⃣ Ôn luyện kỹ thuật violin chuyên sâu\n2️⃣ Học và luyện các bài thi theo giáo trình chuẩn\n3️⃣ Rèn luyện tốc độ, độ chính xác và biểu cảm\n4️⃣ Thực hành thi thử và nhận xét chi tiết\n\n✨ Sau khóa học, học viên sẵn sàng tham gia các kỳ thi violin với kỹ thuật vững chắc.\nAnh/chị có thể tham gia buổi học trải nghiệm trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994781,
+      "course": "Luyện Thi Violin",
+      "emoji": "🏆",
+      "content": "🎻 LUYỆN THI VIOLIN — NHÓM 3 HỌC VIÊN (1 THÁNG)\n💰 Học phí: 2.200.000đ / tháng\n⏱ Thời lượng: 1 tháng (8 buổi)\n📅 Tần suất: 2 buổi/tuần\n\n📚 Nội dung khóa học:\n1️⃣ Ôn luyện kỹ thuật violin chuyên sâu\n2️⃣ Học và luyện các bài thi theo giáo trình chuẩn\n3️⃣ Rèn luyện tốc độ, độ chính xác và biểu cảm\n4️⃣ Thực hành thi thử và nhận xét chi tiết\n\n✨ Sau khóa học, học viên sẵn sàng tham gia các kỳ thi violin với kỹ thuật vững chắc.\nAnh/chị có thể tham gia buổi học trải nghiệm trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994782,
+      "course": "Luyện Thi Violin",
+      "emoji": "🏆",
+      "content": "🎻 LUYỆN THI VIOLIN — LỚP 2 HỌC VIÊN (3 THÁNG)\n💰 Học phí: 8.400.000đ / khóa\n⏱ Thời lượng: 3 tháng (24 buổi)\n📅 Tần suất: 2 buổi/tuần\n💳 Đóng 2 lần: 4.200.000đ/lần\n\n📚 Nội dung khóa học:\n1️⃣ Ôn luyện kỹ thuật violin chuyên sâu\n2️⃣ Học và luyện các bài thi theo giáo trình chuẩn\n3️⃣ Rèn luyện tốc độ, độ chính xác và biểu cảm\n4️⃣ Thực hành thi thử và nhận xét chi tiết\n\n✨ Sau khóa học, học viên sẵn sàng tham gia các kỳ thi violin với kỹ thuật vững chắc.\nAnh/chị có thể tham gia buổi học trải nghiệm trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994783,
+      "course": "Luyện Thi Violin",
+      "emoji": "🏆",
+      "content": "🎻 LUYỆN THI VIOLIN — LỚP 2 HỌC VIÊN (1 THÁNG)\n💰 Học phí: 3.000.000đ / tháng\n⏱ Thời lượng: 1 tháng (8 buổi)\n📅 Tần suất: 2 buổi/tuần\n\n📚 Nội dung khóa học:\n1️⃣ Ôn luyện kỹ thuật violin chuyên sâu\n2️⃣ Học và luyện các bài thi theo giáo trình chuẩn\n3️⃣ Rèn luyện tốc độ, độ chính xác và biểu cảm\n4️⃣ Thực hành thi thử và nhận xét chi tiết\n\n✨ Sau khóa học, học viên sẵn sàng tham gia các kỳ thi violin với kỹ thuật vững chắc.\nAnh/chị có thể tham gia buổi học trải nghiệm trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994784,
+      "course": "Luyện Thi Violin",
+      "emoji": "🏆",
+      "content": "🎻 LUYỆN THI VIOLIN — LỚP 1-1 CÁ NHÂN (3 THÁNG)\n💰 Học phí: 12.000.000đ / khóa\n⏱ Thời lượng: 3 tháng (24 buổi)\n📅 Tần suất: 2 buổi/tuần\n💳 Đóng 2 lần: 6.000.000đ/lần\n\n📚 Nội dung khóa học:\n1️⃣ Ôn luyện kỹ thuật violin chuyên sâu\n2️⃣ Học và luyện các bài thi theo giáo trình chuẩn\n3️⃣ Rèn luyện tốc độ, độ chính xác và biểu cảm\n4️⃣ Thực hành thi thử và nhận xét chi tiết\n\n✨ Sau khóa học, học viên sẵn sàng tham gia các kỳ thi violin với kỹ thuật vững chắc.\nAnh/chị có thể tham gia buổi học trải nghiệm (500.000đ) trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994785,
+      "course": "Luyện Thi Violin",
+      "emoji": "🏆",
+      "content": "🎻 LUYỆN THI VIOLIN — LỚP 1-1 CÁ NHÂN (1 THÁNG)\n💰 Học phí: 4.200.000đ / tháng\n⏱ Thời lượng: 1 tháng (8 buổi)\n📅 Tần suất: 2 buổi/tuần\n\n📚 Nội dung khóa học:\n1️⃣ Ôn luyện kỹ thuật violin chuyên sâu\n2️⃣ Học và luyện các bài thi theo giáo trình chuẩn\n3️⃣ Rèn luyện tốc độ, độ chính xác và biểu cảm\n4️⃣ Thực hành thi thử và nhận xét chi tiết\n\n✨ Sau khóa học, học viên sẵn sàng tham gia các kỳ thi violin với kỹ thuật vững chắc.\nAnh/chị có thể tham gia buổi học trải nghiệm (500.000đ) trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994786,
+      "course": "Piano",
+      "emoji": "🎹",
+      "content": "🎹 PIANO — LỚP NHÓM 3 HỌC VIÊN (3 THÁNG)\n💰 Học phí: 5.400.000đ / khóa\n⏱ Thời lượng: 3 tháng (24 buổi)\n📅 Tần suất: 2 buổi/tuần\n💳 Đóng 2 lần: 2.700.000đ/lần\n\n📚 Nội dung khóa học:\n1️⃣ Làm quen piano và hợp âm cơ bản\n2️⃣ Học đọc nhạc và luyện ngón tay\n3️⃣ Học đệm và chơi các bản nhạc đơn giản\n4️⃣ Thực hành chơi các bài nhạc yêu thích\n\n✨ Sau khóa học, học viên có thể tự chơi piano và đệm hát một số bài hát phổ biến.\nAnh/chị có thể tham gia buổi học trải nghiệm trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994787,
+      "course": "Piano",
+      "emoji": "🎹",
+      "content": "🎹 PIANO — LỚP NHÓM 3 HỌC VIÊN (1 THÁNG)\n💰 Học phí: 2.000.000đ / tháng\n⏱ Thời lượng: 1 tháng (8 buổi)\n📅 Tần suất: 2 buổi/tuần\n\n📚 Nội dung khóa học:\n1️⃣ Làm quen piano và hợp âm cơ bản\n2️⃣ Học đọc nhạc và luyện ngón tay\n3️⃣ Học đệm và chơi các bản nhạc đơn giản\n4️⃣ Thực hành chơi các bài nhạc yêu thích\n\n✨ Sau khóa học, học viên có thể tự chơi piano và đệm hát một số bài hát phổ biến.\nAnh/chị có thể tham gia buổi học trải nghiệm trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994788,
+      "course": "Piano",
+      "emoji": "🎹",
+      "content": "🎹 PIANO — LỚP 2 HỌC VIÊN (3 THÁNG)\n💰 Học phí: 7.200.000đ / khóa\n⏱ Thời lượng: 3 tháng (24 buổi)\n📅 Tần suất: 2 buổi/tuần\n💳 Đóng 2 lần: 3.600.000đ/lần\n\n📚 Nội dung khóa học:\n1️⃣ Làm quen piano và hợp âm cơ bản\n2️⃣ Học đọc nhạc và luyện ngón tay\n3️⃣ Học đệm và chơi các bản nhạc đơn giản\n4️⃣ Thực hành chơi các bài nhạc yêu thích\n\n✨ Sau khóa học, học viên có thể tự chơi piano và đệm hát một số bài hát phổ biến.\nAnh/chị có thể tham gia buổi học trải nghiệm trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994789,
+      "course": "Piano",
+      "emoji": "🎹",
+      "content": "🎹 PIANO — LỚP 2 HỌC VIÊN (1 THÁNG)\n💰 Học phí: 2.600.000đ / tháng\n⏱ Thời lượng: 1 tháng (8 buổi)\n📅 Tần suất: 2 buổi/tuần\n\n📚 Nội dung khóa học:\n1️⃣ Làm quen piano và hợp âm cơ bản\n2️⃣ Học đọc nhạc và luyện ngón tay\n3️⃣ Học đệm và chơi các bản nhạc đơn giản\n4️⃣ Thực hành chơi các bài nhạc yêu thích\n\n✨ Sau khóa học, học viên có thể tự chơi piano và đệm hát một số bài hát phổ biến.\nAnh/chị có thể tham gia buổi học trải nghiệm trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994790,
+      "course": "Piano",
+      "emoji": "🎹",
+      "content": "🎹 PIANO — LỚP 1-1 CÁ NHÂN (3 THÁNG)\n💰 Học phí: 12.000.000đ / khóa\n⏱ Thời lượng: 3 tháng (24 buổi)\n📅 Tần suất: 2 buổi/tuần\n💳 Đóng 2 lần: 6.000.000đ/lần\n\n📚 Nội dung khóa học:\n1️⃣ Làm quen piano và hợp âm cơ bản\n2️⃣ Học đọc nhạc và luyện ngón tay\n3️⃣ Học đệm và chơi các bản nhạc đơn giản\n4️⃣ Thực hành chơi các bài nhạc yêu thích\n\n✨ Sau khóa học, học viên có thể tự chơi piano và đệm hát một số bài hát phổ biến.\nAnh/chị có thể tham gia buổi học trải nghiệm (500.000đ) trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994791,
+      "course": "Piano",
+      "emoji": "🎹",
+      "content": "🎹 PIANO — LỚP 1-1 CÁ NHÂN (1 THÁNG)\n💰 Học phí: 4.200.000đ / tháng\n⏱ Thời lượng: 1 tháng (8 buổi)\n📅 Tần suất: 2 buổi/tuần\n\n📚 Nội dung khóa học:\n1️⃣ Làm quen piano và hợp âm cơ bản\n2️⃣ Học đọc nhạc và luyện ngón tay\n3️⃣ Học đệm và chơi các bản nhạc đơn giản\n4️⃣ Thực hành chơi các bài nhạc yêu thích\n\n✨ Sau khóa học, học viên có thể tự chơi piano và đệm hát một số bài hát phổ biến.\nAnh/chị có thể tham gia buổi học trải nghiệm (500.000đ) trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994792,
+      "course": "Luyện Thi Piano",
+      "emoji": "🏆",
+      "content": "🎹 LUYỆN THI PIANO — NHÓM 3 HỌC VIÊN (3 THÁNG)\n💰 Học phí: 6.000.000đ / khóa\n⏱ Thời lượng: 3 tháng (24 buổi)\n📅 Tần suất: 2 buổi/tuần\n💳 Đóng 2 lần: 3.000.000đ/lần\n\n📚 Nội dung khóa học:\n1️⃣ Ôn luyện kỹ thuật piano chuyên sâu\n2️⃣ Học và luyện các bài thi theo giáo trình chuẩn\n3️⃣ Rèn luyện tốc độ, độ chính xác và biểu cảm\n4️⃣ Thực hành thi thử và nhận xét chi tiết\n\n✨ Sau khóa học, học viên sẵn sàng tham gia các kỳ thi piano với kỹ thuật vững chắc.\nAnh/chị có thể tham gia buổi học trải nghiệm trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994793,
+      "course": "Luyện Thi Piano",
+      "emoji": "🏆",
+      "content": "🎹 LUYỆN THI PIANO — NHÓM 3 HỌC VIÊN (1 THÁNG)\n💰 Học phí: 2.200.000đ / tháng\n⏱ Thời lượng: 1 tháng (8 buổi)\n📅 Tần suất: 2 buổi/tuần\n\n📚 Nội dung khóa học:\n1️⃣ Ôn luyện kỹ thuật piano chuyên sâu\n2️⃣ Học và luyện các bài thi theo giáo trình chuẩn\n3️⃣ Rèn luyện tốc độ, độ chính xác và biểu cảm\n4️⃣ Thực hành thi thử và nhận xét chi tiết\n\n✨ Sau khóa học, học viên sẵn sàng tham gia các kỳ thi piano với kỹ thuật vững chắc.\nAnh/chị có thể tham gia buổi học trải nghiệm trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994794,
+      "course": "Luyện Thi Piano",
+      "emoji": "🏆",
+      "content": "🎹 LUYỆN THI PIANO — LỚP 2 HỌC VIÊN (3 THÁNG)\n💰 Học phí: 8.400.000đ / khóa\n⏱ Thời lượng: 3 tháng (24 buổi)\n📅 Tần suất: 2 buổi/tuần\n💳 Đóng 2 lần: 4.200.000đ/lần\n\n📚 Nội dung khóa học:\n1️⃣ Ôn luyện kỹ thuật piano chuyên sâu\n2️⃣ Học và luyện các bài thi theo giáo trình chuẩn\n3️⃣ Rèn luyện tốc độ, độ chính xác và biểu cảm\n4️⃣ Thực hành thi thử và nhận xét chi tiết\n\n✨ Sau khóa học, học viên sẵn sàng tham gia các kỳ thi piano với kỹ thuật vững chắc.\nAnh/chị có thể tham gia buổi học trải nghiệm trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994795,
+      "course": "Luyện Thi Piano",
+      "emoji": "🏆",
+      "content": "🎹 LUYỆN THI PIANO — LỚP 2 HỌC VIÊN (1 THÁNG)\n💰 Học phí: 3.000.000đ / tháng\n⏱ Thời lượng: 1 tháng (8 buổi)\n📅 Tần suất: 2 buổi/tuần\n\n📚 Nội dung khóa học:\n1️⃣ Ôn luyện kỹ thuật piano chuyên sâu\n2️⃣ Học và luyện các bài thi theo giáo trình chuẩn\n3️⃣ Rèn luyện tốc độ, độ chính xác và biểu cảm\n4️⃣ Thực hành thi thử và nhận xét chi tiết\n\n✨ Sau khóa học, học viên sẵn sàng tham gia các kỳ thi piano với kỹ thuật vững chắc.\nAnh/chị có thể tham gia buổi học trải nghiệm trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994796,
+      "course": "Luyện Thi Piano",
+      "emoji": "🏆",
+      "content": "🎹 LUYỆN THI PIANO — LỚP 1-1 CÁ NHÂN (3 THÁNG)\n💰 Học phí: 12.000.000đ / khóa\n⏱ Thời lượng: 3 tháng (24 buổi)\n📅 Tần suất: 2 buổi/tuần\n💳 Đóng 2 lần: 6.000.000đ/lần\n\n📚 Nội dung khóa học:\n1️⃣ Ôn luyện kỹ thuật piano chuyên sâu\n2️⃣ Học và luyện các bài thi theo giáo trình chuẩn\n3️⃣ Rèn luyện tốc độ, độ chính xác và biểu cảm\n4️⃣ Thực hành thi thử và nhận xét chi tiết\n\n✨ Sau khóa học, học viên sẵn sàng tham gia các kỳ thi piano với kỹ thuật vững chắc.\nAnh/chị có thể tham gia buổi học trải nghiệm (500.000đ) trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994797,
+      "course": "Luyện Thi Piano",
+      "emoji": "🏆",
+      "content": "🎹 LUYỆN THI PIANO — LỚP 1-1 CÁ NHÂN (1 THÁNG)\n💰 Học phí: 4.200.000đ / tháng\n⏱ Thời lượng: 1 tháng (8 buổi)\n📅 Tần suất: 2 buổi/tuần\n\n📚 Nội dung khóa học:\n1️⃣ Ôn luyện kỹ thuật piano chuyên sâu\n2️⃣ Học và luyện các bài thi theo giáo trình chuẩn\n3️⃣ Rèn luyện tốc độ, độ chính xác và biểu cảm\n4️⃣ Thực hành thi thử và nhận xét chi tiết\n\n✨ Sau khóa học, học viên sẵn sàng tham gia các kỳ thi piano với kỹ thuật vững chắc.\nAnh/chị có thể tham gia buổi học trải nghiệm (500.000đ) trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994798,
+      "course": "Piano Đệm Hát",
+      "emoji": "🎹🎤",
+      "content": "🎹🎤 PIANO ĐỆM HÁT — LỚP NHÓM 3 HỌC VIÊN (3 THÁNG)\n💰 Học phí: 5.400.000đ / khóa\n⏱ Thời lượng: 3 tháng (24 buổi)\n📅 Tần suất: 2 buổi/tuần\n💳 Đóng 2 lần: 2.700.000đ/lần\n\n📚 Nội dung khóa học:\n1️⃣ Làm quen piano và hợp âm cơ bản\n2️⃣ Học cách đệm hát các bài hát quen thuộc\n3️⃣ Học pattern đệm piano đơn giản\n4️⃣ Thực hành đệm và hát các bài yêu thích\n\n✨ Sau khóa học, học viên có thể tự đệm và hát một số bài hát phổ biến.\nAnh/chị có thể tham gia buổi học trải nghiệm trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994799,
+      "course": "Piano Đệm Hát",
+      "emoji": "🎹🎤",
+      "content": "🎹🎤 PIANO ĐỆM HÁT — LỚP NHÓM 3 HỌC VIÊN (1 THÁNG)\n💰 Học phí: 2.000.000đ / tháng\n⏱ Thời lượng: 1 tháng (8 buổi)\n📅 Tần suất: 2 buổi/tuần\n\n📚 Nội dung khóa học:\n1️⃣ Làm quen piano và hợp âm cơ bản\n2️⃣ Học cách đệm hát các bài hát quen thuộc\n3️⃣ Học pattern đệm piano đơn giản\n4️⃣ Thực hành đệm và hát các bài yêu thích\n\n✨ Sau khóa học, học viên có thể tự đệm và hát một số bài hát phổ biến.\nAnh/chị có thể tham gia buổi học trải nghiệm trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994800,
+      "course": "Piano Đệm Hát",
+      "emoji": "🎹🎤",
+      "content": "🎹🎤 PIANO ĐỆM HÁT — LỚP 2 HỌC VIÊN (3 THÁNG)\n💰 Học phí: 7.200.000đ / khóa\n⏱ Thời lượng: 3 tháng (24 buổi)\n📅 Tần suất: 2 buổi/tuần\n💳 Đóng 2 lần: 3.600.000đ/lần\n\n📚 Nội dung khóa học:\n1️⃣ Làm quen piano và hợp âm cơ bản\n2️⃣ Học cách đệm hát các bài hát quen thuộc\n3️⃣ Học pattern đệm piano đơn giản\n4️⃣ Thực hành đệm và hát các bài yêu thích\n\n✨ Sau khóa học, học viên có thể tự đệm và hát một số bài hát phổ biến.\nAnh/chị có thể tham gia buổi học trải nghiệm trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994801,
+      "course": "Piano Đệm Hát",
+      "emoji": "🎹🎤",
+      "content": "🎹🎤 PIANO ĐỆM HÁT — LỚP 2 HỌC VIÊN (1 THÁNG)\n💰 Học phí: 2.600.000đ / tháng\n⏱ Thời lượng: 1 tháng (8 buổi)\n📅 Tần suất: 2 buổi/tuần\n\n📚 Nội dung khóa học:\n1️⃣ Làm quen piano và hợp âm cơ bản\n2️⃣ Học cách đệm hát các bài hát quen thuộc\n3️⃣ Học pattern đệm piano đơn giản\n4️⃣ Thực hành đệm và hát các bài yêu thích\n\n✨ Sau khóa học, học viên có thể tự đệm và hát một số bài hát phổ biến.\nAnh/chị có thể tham gia buổi học trải nghiệm trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994802,
+      "course": "Piano Đệm Hát",
+      "emoji": "🎹🎤",
+      "content": "🎹🎤 PIANO ĐỆM HÁT — LỚP 1-1 CÁ NHÂN (3 THÁNG)\n💰 Học phí: 4.200.000đ / khóa\n⏱ Thời lượng: 3 tháng (24 buổi)\n📅 Tần suất: 2 buổi/tuần\n💳 Đóng 2 lần: 2.100.000đ/lần\n\n📚 Nội dung khóa học:\n1️⃣ Làm quen piano và hợp âm cơ bản\n2️⃣ Học cách đệm hát các bài hát quen thuộc\n3️⃣ Học pattern đệm piano đơn giản\n4️⃣ Thực hành đệm và hát các bài yêu thích\n\n✨ Sau khóa học, học viên có thể tự đệm và hát một số bài hát phổ biến.\nAnh/chị có thể tham gia buổi workshop cảm thụ âm nhạc trước khi đăng ký ạ."
+    },
+    {
+      "id": 1777178994803,
+      "course": "Piano Đệm Hát",
+      "emoji": "🎹🎤",
+      "content": "🎹🎤 PIANO ĐỆM HÁT — LỚP 1-1 CÁ NHÂN (1 THÁNG)\n💰 Học phí: 2.600.000đ / tháng\n⏱ Thời lượng: 1 tháng (8 buổi)\n📅 Tần suất: 2 buổi/tuần\n\n📚 Nội dung khóa học:\n1️⃣ Làm quen piano và hợp âm cơ bản\n2️⃣ Học cách đệm hát các bài hát quen thuộc\n3️⃣ Học pattern đệm piano đơn giản\n4️⃣ Thực hành đệm và hát các bài yêu thích\n\n✨ Sau khóa học, học viên có thể tự đệm và hát một số bài hát phổ biến.\nAnh/chị có thể tham gia buổi workshop cảm thụ âm nhạc trước khi đăng ký ạ."
+    },
+    {
+      "id": 1777178994804,
+      "course": "Ukulele",
+      "emoji": "🪕",
+      "content": "🪕 UKULELE — LỚP NHÓM 3 HỌC VIÊN (3 THÁNG)\n💰 Học phí: 5.400.000đ / khóa\n⏱ Thời lượng: 3 tháng (24 buổi)\n📅 Tần suất: 2 buổi/tuần\n💳 Đóng 2 lần: 2.700.000đ/lần\n\n📚 Nội dung khóa học:\n1️⃣ Làm quen ukulele và tiết tấu cơ bản\n2️⃣ Học hợp âm và kỹ thuật gảy đàn\n3️⃣ Học đệm các bài hát vui và dễ chơi\n4️⃣ Thực hành đệm hát các bài yêu thích\n\n✨ Sau khóa học, học viên có thể tự đệm hát được nhiều bài nhạc phổ biến một cách tự tin.\nAnh/chị có thể tham gia buổi học trải nghiệm trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994805,
+      "course": "Ukulele",
+      "emoji": "🪕",
+      "content": "🪕 UKULELE — LỚP NHÓM 3 HỌC VIÊN (1 THÁNG)\n💰 Học phí: 2.000.000đ / tháng\n⏱ Thời lượng: 1 tháng (8 buổi)\n📅 Tần suất: 2 buổi/tuần\n\n📚 Nội dung khóa học:\n1️⃣ Làm quen ukulele và tiết tấu cơ bản\n2️⃣ Học hợp âm và kỹ thuật gảy đàn\n3️⃣ Học đệm các bài hát vui và dễ chơi\n4️⃣ Thực hành đệm hát các bài yêu thích\n\n✨ Sau khóa học, học viên có thể tự đệm hát được nhiều bài nhạc phổ biến một cách tự tin.\nAnh/chị có thể tham gia buổi học trải nghiệm trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994806,
+      "course": "Ukulele",
+      "emoji": "🪕",
+      "content": "🪕 UKULELE — LỚP 2 HỌC VIÊN (3 THÁNG)\n💰 Học phí: 7.200.000đ / khóa\n⏱ Thời lượng: 3 tháng (24 buổi)\n📅 Tần suất: 2 buổi/tuần\n💳 Đóng 2 lần: 3.600.000đ/lần\n\n📚 Nội dung khóa học:\n1️⃣ Làm quen ukulele và tiết tấu cơ bản\n2️⃣ Học hợp âm và kỹ thuật gảy đàn\n3️⃣ Học đệm các bài hát vui và dễ chơi\n4️⃣ Thực hành đệm hát các bài yêu thích\n\n✨ Sau khóa học, học viên có thể tự đệm hát được nhiều bài nhạc phổ biến một cách tự tin.\nAnh/chị có thể tham gia buổi học trải nghiệm trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994807,
+      "course": "Ukulele",
+      "emoji": "🪕",
+      "content": "🪕 UKULELE — LỚP 2 HỌC VIÊN (1 THÁNG)\n💰 Học phí: 2.600.000đ / tháng\n⏱ Thời lượng: 1 tháng (8 buổi)\n📅 Tần suất: 2 buổi/tuần\n\n📚 Nội dung khóa học:\n1️⃣ Làm quen ukulele và tiết tấu cơ bản\n2️⃣ Học hợp âm và kỹ thuật gảy đàn\n3️⃣ Học đệm các bài hát vui và dễ chơi\n4️⃣ Thực hành đệm hát các bài yêu thích\n\n✨ Sau khóa học, học viên có thể tự đệm hát được nhiều bài nhạc phổ biến một cách tự tin.\nAnh/chị có thể tham gia buổi học trải nghiệm trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994808,
+      "course": "Ukulele",
+      "emoji": "🪕",
+      "content": "🪕 UKULELE — LỚP 1-1 CÁ NHÂN (3 THÁNG)\n💰 Học phí: 12.000.000đ / khóa\n⏱ Thời lượng: 3 tháng (24 buổi)\n📅 Tần suất: 2 buổi/tuần\n💳 Đóng 2 lần: 6.000.000đ/lần\n\n📚 Nội dung khóa học:\n1️⃣ Làm quen ukulele và tiết tấu cơ bản\n2️⃣ Học hợp âm và kỹ thuật gảy đàn\n3️⃣ Học đệm các bài hát vui và dễ chơi\n4️⃣ Thực hành đệm hát các bài yêu thích\n\n✨ Sau khóa học, học viên có thể tự đệm hát được nhiều bài nhạc phổ biến một cách tự tin.\nAnh/chị có thể tham gia buổi học trải nghiệm (500.000đ) trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994809,
+      "course": "Ukulele",
+      "emoji": "🪕",
+      "content": "🪕 UKULELE — LỚP 1-1 CÁ NHÂN (1 THÁNG)\n💰 Học phí: 4.200.000đ / tháng\n⏱ Thời lượng: 1 tháng (8 buổi)\n📅 Tần suất: 2 buổi/tuần\n\n📚 Nội dung khóa học:\n1️⃣ Làm quen ukulele và tiết tấu cơ bản\n2️⃣ Học hợp âm và kỹ thuật gảy đàn\n3️⃣ Học đệm các bài hát vui và dễ chơi\n4️⃣ Thực hành đệm hát các bài yêu thích\n\n✨ Sau khóa học, học viên có thể tự đệm hát được nhiều bài nhạc phổ biến một cách tự tin.\nAnh/chị có thể tham gia buổi học trải nghiệm (500.000đ) trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994810,
+      "course": "Thanh Nhạc",
+      "emoji": "🎤",
+      "content": "🎤 THANH NHẠC — LỚP 2 HỌC VIÊN (3 THÁNG)\n💰 Học phí: 7.200.000đ / khóa\n⏱ Thời lượng: 3 tháng (24 buổi)\n📅 Tần suất: 2 buổi/tuần\n💳 Đóng 2 lần: 3.600.000đ/lần\n\n📚 Nội dung khóa học:\n1️⃣ Luyện giọng và hơi thở cơ bản\n2️⃣ Học kỹ thuật hát rõ lời, lấy hơi đúng\n3️⃣ Học xử lý cảm xúc qua giọng hát\n4️⃣ Thực hành thể hiện các bài hát yêu thích\n\n✨ Sau khóa học, học viên có thể hát đúng kỹ thuật và tự tin biểu diễn trước đám đông.\nAnh/chị có thể tham gia buổi học trải nghiệm trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994811,
+      "course": "Thanh Nhạc",
+      "emoji": "🎤",
+      "content": "🎤 THANH NHẠC — LỚP 2 HỌC VIÊN (1 THÁNG)\n💰 Học phí: 2.600.000đ / tháng\n⏱ Thời lượng: 1 tháng (8 buổi)\n📅 Tần suất: 2 buổi/tuần\n\n📚 Nội dung khóa học:\n1️⃣ Luyện giọng và hơi thở cơ bản\n2️⃣ Học kỹ thuật hát rõ lời, lấy hơi đúng\n3️⃣ Học xử lý cảm xúc qua giọng hát\n4️⃣ Thực hành thể hiện các bài hát yêu thích\n\n✨ Sau khóa học, học viên có thể hát đúng kỹ thuật và tự tin biểu diễn trước đám đông.\nAnh/chị có thể tham gia buổi học trải nghiệm trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994812,
+      "course": "Thanh Nhạc",
+      "emoji": "🎤",
+      "content": "🎤 THANH NHẠC — LỚP 1-1 CÁ NHÂN (3 THÁNG)\n💰 Học phí: 12.000.000đ / khóa\n⏱ Thời lượng: 3 tháng (24 buổi)\n📅 Tần suất: 2 buổi/tuần\n💳 Đóng 2 lần: 6.000.000đ/lần\n\n📚 Nội dung khóa học:\n1️⃣ Luyện giọng và hơi thở cơ bản\n2️⃣ Học kỹ thuật hát rõ lời, lấy hơi đúng\n3️⃣ Học xử lý cảm xúc qua giọng hát\n4️⃣ Thực hành thể hiện các bài hát yêu thích\n\n✨ Sau khóa học, học viên có thể hát đúng kỹ thuật và tự tin biểu diễn trước đám đông.\nAnh/chị có thể tham gia buổi học trải nghiệm (500.000đ) trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994813,
+      "course": "Thanh Nhạc",
+      "emoji": "🎤",
+      "content": "🎤 THANH NHẠC — LỚP 1-1 CÁ NHÂN (1 THÁNG)\n💰 Học phí: 4.200.000đ / tháng\n⏱ Thời lượng: 1 tháng (8 buổi)\n📅 Tần suất: 2 buổi/tuần\n\n📚 Nội dung khóa học:\n1️⃣ Luyện giọng và hơi thở cơ bản\n2️⃣ Học kỹ thuật hát rõ lời, lấy hơi đúng\n3️⃣ Học xử lý cảm xúc qua giọng hát\n4️⃣ Thực hành thể hiện các bài hát yêu thích\n\n✨ Sau khóa học, học viên có thể hát đúng kỹ thuật và tự tin biểu diễn trước đám đông.\nAnh/chị có thể tham gia buổi học trải nghiệm (500.000đ) trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994814,
+      "course": "Vẽ – Mầm Non",
+      "emoji": "🖍️",
+      "content": "🖍️ VẼ MẦM NON — LỚP NHÓM (3 THÁNG)\n💰 Học phí: 3.600.000đ / khóa\n⏱ Thời lượng: 3 tháng (24 buổi)\n📅 Tần suất: 2 buổi/tuần\n💳 Đóng 2 lần: 1.800.000đ/lần\n\n📚 Nội dung khóa học:\n1️⃣ Làm quen màu sắc và hình khối cơ bản\n2️⃣ Vẽ các hình đơn giản theo chủ đề\n3️⃣ Phát triển sự sáng tạo qua các bài tập\n4️⃣ Tạo ra các tác phẩm nghệ thuật đơn giản\n\n✨ Sau khóa học, bé có nền tảng cảm nhận màu sắc, hình dạng và khả năng sáng tạo tự do.\nAnh/chị có thể tham gia buổi học trải nghiệm (100.000đ) trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994815,
+      "course": "Vẽ – Mầm Non",
+      "emoji": "🖍️",
+      "content": "🖍️ VẼ MẦM NON — LỚP NHÓM (1 THÁNG)\n💰 Học phí: 1.400.000đ / tháng\n⏱ Thời lượng: 1 tháng (8 buổi)\n📅 Tần suất: 2 buổi/tuần\n\n📚 Nội dung khóa học:\n1️⃣ Làm quen màu sắc và hình khối cơ bản\n2️⃣ Vẽ các hình đơn giản theo chủ đề\n3️⃣ Phát triển sự sáng tạo qua các bài tập\n4️⃣ Tạo ra các tác phẩm nghệ thuật đơn giản\n\n✨ Sau khóa học, bé có nền tảng cảm nhận màu sắc, hình dạng và khả năng sáng tạo tự do.\nAnh/chị có thể tham gia buổi học trải nghiệm (100.000đ) trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994816,
+      "course": "Vẽ – Căn Bản",
+      "emoji": "✏️",
+      "content": "✏️ VẼ CĂN BẢN — LỚP NHÓM (3 THÁNG)\n💰 Học phí: 3.300.000đ / khóa\n⏱ Thời lượng: 3 tháng (24 buổi)\n📅 Tần suất: 2 buổi/tuần\n💳 Đóng 2 lần: 1.650.000đ/lần\n\n📚 Nội dung khóa học:\n1️⃣ Kỹ thuật vẽ phác thảo và đường nét\n2️⃣ Học bố cục, ánh sáng và bóng đổ\n3️⃣ Vẽ tĩnh vật và phong cảnh cơ bản\n4️⃣ Thực hành hoàn thiện các bài vẽ hoàn chỉnh\n\n✨ Sau khóa học, học viên có nền tảng vẽ căn bản vững chắc để học các kỹ thuật nâng cao hơn.\nAnh/chị có thể tham gia buổi học trải nghiệm (100.000đ) trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994817,
+      "course": "Vẽ – Căn Bản",
+      "emoji": "✏️",
+      "content": "✏️ VẼ CĂN BẢN — LỚP NHÓM (1 THÁNG)\n💰 Học phí: 1.300.000đ / tháng\n⏱ Thời lượng: 1 tháng (8 buổi)\n📅 Tần suất: 2 buổi/tuần\n\n📚 Nội dung khóa học:\n1️⃣ Kỹ thuật vẽ phác thảo và đường nét\n2️⃣ Học bố cục, ánh sáng và bóng đổ\n3️⃣ Vẽ tĩnh vật và phong cảnh cơ bản\n4️⃣ Thực hành hoàn thiện các bài vẽ hoàn chỉnh\n\n✨ Sau khóa học, học viên có nền tảng vẽ căn bản vững chắc để học các kỹ thuật nâng cao hơn.\nAnh/chị có thể tham gia buổi học trải nghiệm (100.000đ) trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994818,
+      "course": "Vẽ – Ký Họa / Màu Nước / Marker",
+      "emoji": "🖊️",
+      "content": "🖊️ KÝ HỌA / MÀU NƯỚC / MÀU MARKER — LỚP NHÓM (3 THÁNG)\n💰 Học phí: 3.600.000đ / khóa\n⏱ Thời lượng: 3 tháng (24 buổi)\n📅 Tần suất: 2 buổi/tuần\n💳 Đóng 2 lần: 1.800.000đ/lần\n\n📚 Nội dung khóa học:\n1️⃣ Làm quen chất liệu và dụng cụ vẽ chuyên biệt\n2️⃣ Học kỹ thuật xử lý màu đặc trưng theo từng chất liệu\n3️⃣ Thực hành vẽ các chủ đề đa dạng\n4️⃣ Hoàn thiện bài vẽ bằng chất liệu đã chọn\n\n✨ Sau khóa học, học viên có thể sử dụng thành thạo chất liệu đã học và thể hiện phong cách riêng.\nAnh/chị có thể tham gia buổi học trải nghiệm (100.000đ) trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994819,
+      "course": "Vẽ – Ký Họa / Màu Nước / Marker",
+      "emoji": "🖊️",
+      "content": "🖊️ KÝ HỌA / MÀU NƯỚC / MÀU MARKER — LỚP NHÓM (1 THÁNG)\n💰 Học phí: 1.400.000đ / tháng\n⏱ Thời lượng: 1 tháng (8 buổi)\n📅 Tần suất: 2 buổi/tuần\n\n📚 Nội dung khóa học:\n1️⃣ Làm quen chất liệu và dụng cụ vẽ chuyên biệt\n2️⃣ Học kỹ thuật xử lý màu đặc trưng theo từng chất liệu\n3️⃣ Thực hành vẽ các chủ đề đa dạng\n4️⃣ Hoàn thiện bài vẽ bằng chất liệu đã chọn\n\n✨ Sau khóa học, học viên có thể sử dụng thành thạo chất liệu đã học và thể hiện phong cách riêng.\nAnh/chị có thể tham gia buổi học trải nghiệm (100.000đ) trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994820,
+      "course": "Vẽ – Acrylic / Digital Art",
+      "emoji": "🖼️",
+      "content": "🖼️ MÀU ACRYLIC CANVAS / DIGITAL ART — LỚP NHÓM (3 THÁNG)\n💰 Học phí: 4.800.000đ / khóa\n⏱ Thời lượng: 3 tháng (24 buổi)\n📅 Tần suất: 2 buổi/tuần\n💳 Đóng 2 lần: 2.400.000đ/lần\n\n📚 Nội dung khóa học:\n1️⃣ Làm quen với canvas hoặc bảng vẽ kỹ thuật số\n2️⃣ Học kỹ thuật pha màu và xây dựng lớp màu\n3️⃣ Thực hành vẽ tác phẩm trên canvas hoặc phần mềm\n4️⃣ Hoàn thiện và trình bày tác phẩm cá nhân\n\n✨ Sau khóa học, học viên có thể tạo ra các tác phẩm hội họa hoàn chỉnh trên canvas hoặc môi trường số.\nAnh/chị có thể tham gia buổi học trải nghiệm (100.000đ) trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994821,
+      "course": "Vẽ – Acrylic / Digital Art",
+      "emoji": "🖼️",
+      "content": "🖼️ MÀU ACRYLIC CANVAS / DIGITAL ART — LỚP NHÓM (1 THÁNG)\n💰 Học phí: 1.800.000đ / tháng\n⏱ Thời lượng: 1 tháng (8 buổi)\n📅 Tần suất: 2 buổi/tuần\n\n📚 Nội dung khóa học:\n1️⃣ Làm quen với canvas hoặc bảng vẽ kỹ thuật số\n2️⃣ Học kỹ thuật pha màu và xây dựng lớp màu\n3️⃣ Thực hành vẽ tác phẩm trên canvas hoặc phần mềm\n4️⃣ Hoàn thiện và trình bày tác phẩm cá nhân\n\n✨ Sau khóa học, học viên có thể tạo ra các tác phẩm hội họa hoàn chỉnh trên canvas hoặc môi trường số.\nAnh/chị có thể tham gia buổi học trải nghiệm (100.000đ) trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994822,
+      "course": "Luyện Thi Vẽ",
+      "emoji": "🎨",
+      "content": "🎨 LUYỆN THI VẼ — LỚP NHÓM (3 THÁNG)\n💰 Học phí: 7.200.000đ / khóa\n⏱ Thời lượng: 3 tháng (24 buổi)\n📅 Tần suất: 2 buổi/tuần\n💳 Đóng 2 lần: 3.600.000đ/lần\n\n📚 Nội dung khóa học:\n1️⃣ Ôn luyện kỹ thuật vẽ chuyên sâu theo đề thi\n2️⃣ Học bố cục, tỉ lệ và biểu đạt cảm xúc trên tranh\n3️⃣ Luyện tập theo đúng thể thức và thời gian thi\n4️⃣ Thực hành thi thử và nhận xét chi tiết\n\n✨ Sau khóa học, học viên sẵn sàng tham gia các kỳ thi mỹ thuật với kỹ năng và sự tự tin cao.\nAnh/chị có thể tham gia buổi học trải nghiệm (100.000đ) trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994823,
+      "course": "Luyện Thi Vẽ",
+      "emoji": "🎨",
+      "content": "🎨 LUYỆN THI VẼ — LỚP NHÓM (1 THÁNG)\n💰 Học phí: 2.600.000đ / tháng\n⏱ Thời lượng: 1 tháng (8 buổi)\n📅 Tần suất: 2 buổi/tuần\n\n📚 Nội dung khóa học:\n1️⃣ Ôn luyện kỹ thuật vẽ chuyên sâu theo đề thi\n2️⃣ Học bố cục, tỉ lệ và biểu đạt cảm xúc trên tranh\n3️⃣ Luyện tập theo đúng thể thức và thời gian thi\n4️⃣ Thực hành thi thử và nhận xét chi tiết\n\n✨ Sau khóa học, học viên sẵn sàng tham gia các kỳ thi mỹ thuật với kỹ năng và sự tự tin cao.\nAnh/chị có thể tham gia buổi học trải nghiệm (100.000đ) trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994824,
+      "course": "Ballet 3–5 Tuổi",
+      "emoji": "🩰",
+      "content": "🩰 BALLET 3–5 TUỔI — LỚP NHÓM (3 THÁNG)\n💰 Học phí: 3.000.000đ / khóa\n⏱ Thời lượng: 3 tháng (24 buổi)\n📅 Tần suất: 2 buổi/tuần\n💳 Đóng 2 lần: 1.500.000đ/lần\n\n📚 Nội dung khóa học:\n1️⃣ Làm quen với âm nhạc và chuyển động cơ bản\n2️⃣ Học tư thế đứng đúng và khả năng cân bằng\n3️⃣ Luyện tập các bước nhảy ballet đơn giản\n4️⃣ Biểu diễn các bài múa ngắn theo chủ đề\n\n✨ Sau khóa học, bé phát triển sự dẻo dai, phối hợp cơ thể và tình yêu thích âm nhạc nghệ thuật.\nAnh/chị có thể tham gia buổi học trải nghiệm (100.000đ) trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994825,
+      "course": "Ballet 3–5 Tuổi",
+      "emoji": "🩰",
+      "content": "🩰 BALLET 3–5 TUỔI — LỚP NHÓM (1 THÁNG)\n💰 Học phí: 1.200.000đ / tháng\n⏱ Thời lượng: 1 tháng (8 buổi)\n📅 Tần suất: 2 buổi/tuần\n\n📚 Nội dung khóa học:\n1️⃣ Làm quen với âm nhạc và chuyển động cơ bản\n2️⃣ Học tư thế đứng đúng và khả năng cân bằng\n3️⃣ Luyện tập các bước nhảy ballet đơn giản\n4️⃣ Biểu diễn các bài múa ngắn theo chủ đề\n\n✨ Sau khóa học, bé phát triển sự dẻo dai, phối hợp cơ thể và tình yêu thích âm nhạc nghệ thuật.\nAnh/chị có thể tham gia buổi học trải nghiệm (100.000đ) trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994826,
+      "course": "Ballet 6–9 Tuổi",
+      "emoji": "🩰",
+      "content": "🩰 BALLET 6–9 TUỔI — LỚP NHÓM (3 THÁNG)\n💰 Học phí: 3.600.000đ / khóa\n⏱ Thời lượng: 3 tháng (24 buổi)\n📅 Tần suất: 2 buổi/tuần\n💳 Đóng 2 lần: 1.800.000đ/lần\n\n📚 Nội dung khóa học:\n1️⃣ Ôn luyện tư thế và kỹ thuật ballet cơ bản\n2️⃣ Học các bước nhảy và chuyển động trung cấp\n3️⃣ Luyện tập phối hợp nhịp điệu và âm nhạc\n4️⃣ Biểu diễn bài múa hoàn chỉnh cuối khóa\n\n✨ Sau khóa học, học viên đạt được sự thành thục trong kỹ thuật ballet và tự tin trên sân khấu.\nAnh/chị có thể tham gia buổi học trải nghiệm (100.000đ) trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994827,
+      "course": "Ballet 6–9 Tuổi",
+      "emoji": "🩰",
+      "content": "🩰 BALLET 6–9 TUỔI — LỚP NHÓM (1 THÁNG)\n💰 Học phí: 1.400.000đ / tháng\n⏱ Thời lượng: 1 tháng (8 buổi)\n📅 Tần suất: 2 buổi/tuần\n\n📚 Nội dung khóa học:\n1️⃣ Ôn luyện tư thế và kỹ thuật ballet cơ bản\n2️⃣ Học các bước nhảy và chuyển động trung cấp\n3️⃣ Luyện tập phối hợp nhịp điệu và âm nhạc\n4️⃣ Biểu diễn bài múa hoàn chỉnh cuối khóa\n\n✨ Sau khóa học, học viên đạt được sự thành thục trong kỹ thuật ballet và tự tin trên sân khấu.\nAnh/chị có thể tham gia buổi học trải nghiệm (100.000đ) trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994828,
+      "course": "Dance",
+      "emoji": "💃",
+      "content": "💃 DANCE (NHẢY HIỆN ĐẠI) — LỚP NHÓM (3 THÁNG)\n💰 Học phí: 3.000.000đ / khóa\n⏱ Thời lượng: 3 tháng (24 buổi)\n📅 Tần suất: 2 buổi/tuần\n💳 Đóng 2 lần: 1.500.000đ/lần\n\n📚 Nội dung khóa học:\n1️⃣ Khởi động cơ thể và học nhịp điệu cơ bản\n2️⃣ Học các vũ đạo hiện đại phổ biến\n3️⃣ Luyện tập phối hợp nhóm và đồng điệu\n4️⃣ Biểu diễn bài múa nhóm cuối khóa\n\n✨ Sau khóa học, học viên có thể nhảy các phong cách hiện đại và tự tin biểu diễn trước mọi người.\nAnh/chị có thể tham gia buổi học trải nghiệm (100.000đ) trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994829,
+      "course": "Dance",
+      "emoji": "💃",
+      "content": "💃 DANCE (NHẢY HIỆN ĐẠI) — LỚP NHÓM (1 THÁNG)\n💰 Học phí: 1.200.000đ / tháng\n⏱ Thời lượng: 1 tháng (8 buổi)\n📅 Tần suất: 2 buổi/tuần\n\n📚 Nội dung khóa học:\n1️⃣ Khởi động cơ thể và học nhịp điệu cơ bản\n2️⃣ Học các vũ đạo hiện đại phổ biến\n3️⃣ Luyện tập phối hợp nhóm và đồng điệu\n4️⃣ Biểu diễn bài múa nhóm cuối khóa\n\n✨ Sau khóa học, học viên có thể nhảy các phong cách hiện đại và tự tin biểu diễn trước mọi người.\nAnh/chị có thể tham gia buổi học trải nghiệm (100.000đ) trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994830,
+      "course": "Khiêu Vũ",
+      "emoji": "🕺",
+      "content": "🕺 KHIÊU VŨ — LỚP NHÓM (3 THÁNG)\n💰 Học phí: 3.000.000đ / khóa\n⏱ Thời lượng: 3 tháng (24 buổi)\n📅 Tần suất: 2 buổi/tuần\n💳 Đóng 2 lần: 1.500.000đ/lần\n\n📚 Nội dung khóa học:\n1️⃣ Làm quen các điệu nhảy khiêu vũ cơ bản\n2️⃣ Học tư thế, bước đi và dẫn dắt\n3️⃣ Luyện tập phối hợp cặp đôi hoặc nhóm\n4️⃣ Thực hành nhảy trong các tình huống thực tế\n\n✨ Sau khóa học, học viên có thể khiêu vũ tự tin trong các sự kiện, tiệc, giao lưu xã hội.\nAnh/chị có thể tham gia buổi học trải nghiệm (100.000đ) trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994831,
+      "course": "Khiêu Vũ",
+      "emoji": "🕺",
+      "content": "🕺 KHIÊU VŨ — LỚP NHÓM (1 THÁNG)\n💰 Học phí: 1.200.000đ / tháng\n⏱ Thời lượng: 1 tháng (8 buổi)\n📅 Tần suất: 2 buổi/tuần\n\n📚 Nội dung khóa học:\n1️⃣ Làm quen các điệu nhảy khiêu vũ cơ bản\n2️⃣ Học tư thế, bước đi và dẫn dắt\n3️⃣ Luyện tập phối hợp cặp đôi hoặc nhóm\n4️⃣ Thực hành nhảy trong các tình huống thực tế\n\n✨ Sau khóa học, học viên có thể khiêu vũ tự tin trong các sự kiện, tiệc, giao lưu xã hội.\nAnh/chị có thể tham gia buổi học trải nghiệm (100.000đ) trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994832,
+      "course": "Múa Cổ Trang",
+      "emoji": "🏮",
+      "content": "🏮 MÚA CỔ TRANG — LỚP NHÓM (3 THÁNG)\n💰 Học phí: 3.600.000đ / khóa\n⏱ Thời lượng: 3 tháng (24 buổi)\n📅 Tần suất: 2 buổi/tuần\n💳 Đóng 2 lần: 1.800.000đ/lần\n\n📚 Nội dung khóa học:\n1️⃣ Tìm hiểu về múa cổ trang và văn hóa dân tộc\n2️⃣ Học các động tác tay, chân đặc trưng\n3️⃣ Luyện tập biểu cảm và dáng điệu trên nhạc cụ thể\n4️⃣ Biểu diễn bài múa hoàn chỉnh theo chủ đề cổ trang\n\n✨ Sau khóa học, học viên có thể biểu diễn múa cổ trang đúng phong cách và tự tin trên sân khấu.\nAnh/chị có thể tham gia buổi học trải nghiệm (100.000đ) trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994833,
+      "course": "Múa Cổ Trang",
+      "emoji": "🏮",
+      "content": "🏮 MÚA CỔ TRANG — LỚP NHÓM (1 THÁNG)\n💰 Học phí: 1.400.000đ / tháng\n⏱ Thời lượng: 1 tháng (8 buổi)\n📅 Tần suất: 2 buổi/tuần\n\n📚 Nội dung khóa học:\n1️⃣ Tìm hiểu về múa cổ trang và văn hóa dân tộc\n2️⃣ Học các động tác tay, chân đặc trưng\n3️⃣ Luyện tập biểu cảm và dáng điệu trên nhạc cụ thể\n4️⃣ Biểu diễn bài múa hoàn chỉnh theo chủ đề cổ trang\n\n✨ Sau khóa học, học viên có thể biểu diễn múa cổ trang đúng phong cách và tự tin trên sân khấu.\nAnh/chị có thể tham gia buổi học trải nghiệm (100.000đ) trước khi đăng ký lớp chính thức ạ."
+    },
+    {
+      "id": 1777178994834,
+      "course": "Học Thử",
+      "emoji": "⭐",
+      "content": "🔔 HỌC THỬ — LỚP NHÓM (10:1)\n💰 Học phí: 100.000đ / buổi\n⏱ Thời lượng: 1 buổi trải nghiệm (1 buổi)\n📅 Tần suất: \n\n📚 Nội dung khóa học:\n1️⃣ Tìm hiểu môn học và không gian lớp học\n2️⃣ Trải nghiệm trực tiếp cùng giáo viên\n3️⃣ Nhận tư vấn lộ trình học phù hợp\n4️⃣ Giải đáp mọi thắc mắc trước khi đăng ký\n\n✨ Buổi học thử giúp anh/chị cảm nhận thực tế trước khi quyết định đăng ký khóa học chính thức.\n"
+    },
+    {
+      "id": 1777178994835,
+      "course": "Học Thử",
+      "emoji": "⭐",
+      "content": "🔔 HỌC THỬ — LỚP 2 HỌC VIÊN (2-1)\n💰 Học phí: 250.000đ / buổi\n⏱ Thời lượng: 1 buổi trải nghiệm (1 buổi)\n📅 Tần suất: \n\n📚 Nội dung khóa học:\n1️⃣ Tìm hiểu môn học và không gian lớp học\n2️⃣ Trải nghiệm trực tiếp cùng giáo viên\n3️⃣ Nhận tư vấn lộ trình học phù hợp\n4️⃣ Giải đáp mọi thắc mắc trước khi đăng ký\n\n✨ Buổi học thử giúp anh/chị cảm nhận thực tế trước khi quyết định đăng ký khóa học chính thức.\n"
+    },
+    {
+      "id": 1777178994836,
+      "course": "Học Thử",
+      "emoji": "⭐",
+      "content": "🔔 HỌC THỬ — LỚP 1-1 CÁ NHÂN\n💰 Học phí: 500.000đ / buổi\n⏱ Thời lượng: 1 buổi trải nghiệm (1 buổi)\n📅 Tần suất: \n\n📚 Nội dung khóa học:\n1️⃣ Tìm hiểu môn học và không gian lớp học\n2️⃣ Trải nghiệm trực tiếp cùng giáo viên\n3️⃣ Nhận tư vấn lộ trình học phù hợp\n4️⃣ Giải đáp mọi thắc mắc trước khi đăng ký\n\n✨ Buổi học thử giúp anh/chị cảm nhận thực tế trước khi quyết định đăng ký khóa học chính thức.\n"
+    }
+  ],
+  "customCourses": [],
+  "customPrices": {}
+}
