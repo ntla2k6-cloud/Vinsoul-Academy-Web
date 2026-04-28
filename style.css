@@ -108,9 +108,9 @@ body{font-family:'Be Vietnam Pro',sans-serif;background:var(--cream);color:var(-
 }
 
 /* ── STATS GRID ── */
-.stats-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-bottom:20px;}
+.stats-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-bottom:22px;}
 .stat-card{
-  background:var(--white);border-radius:var(--r-lg);padding:16px 16px;
+  background:var(--white);border-radius:var(--r-lg);padding:20px 18px;
   box-shadow:var(--shadow-sm);border:1px solid rgba(200,146,42,.06);
   position:relative;overflow:hidden;transition:transform .2s,box-shadow .2s;
 }
@@ -134,7 +134,7 @@ body{font-family:'Be Vietnam Pro',sans-serif;background:var(--cream);color:var(-
 .stat-icon-wrap.red{background:rgba(217,79,79,.1);}
 .stat-icon-wrap.purple{background:rgba(139,92,246,.1);}
 .stat-icon-wrap.navy{background:rgba(35,74,91,.1);}
-.stat-value{font-size:28px;font-weight:800;color:var(--navy);line-height:1;letter-spacing:-1px;}
+.stat-value{font-size:30px;font-weight:800;color:var(--navy);line-height:1;letter-spacing:-1px;margin-top:6px;}
 .stat-label{font-size:10px;color:var(--muted);margin-top:3px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;}
 
 /* ── WELCOME BANNER ── */
@@ -414,7 +414,7 @@ input::placeholder{color:var(--muted2);font-weight:400;}
 .btn-red:hover{background:#a83030;transform:translateY(-1px);box-shadow:0 4px 14px rgba(201,64,64,.35);}
 
 /* ── DASHBOARD BOTTOM ── */
-.dash-bottom{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.dash-bottom{display:grid;grid-template-columns:1.7fr 1fr;gap:16px;}
 
 /* Decorative horizontal rule in cards */
 .card-divider{height:1px;background:var(--cream2);margin:14px 0;}
@@ -520,4 +520,19 @@ td { max-width: 180px; }
   .modal { padding: 20px 16px; }
   .form-grid { grid-template-columns: 1fr; }
   .form-group.full { grid-column: 1; }
+}
+
+/* ── ACCOUNTS PAGE ── */
+#page-accounts .table-wrap table { min-width: 500px; }
+#page-accounts table th { font-size: 11px; letter-spacing: .6px; text-transform: uppercase; }
+#page-accounts table td { padding: 13px 14px; vertical-align: middle; }
+#page-accounts table th { padding: 11px 14px; }
+
+/* ── STAT CARD responsive ── */
+@media (max-width:1200px) {
+  .stats-grid { grid-template-columns: repeat(3,1fr); }
+  .dash-bottom { grid-template-columns: 1fr; }
+}
+@media (max-width:768px) {
+  .stats-grid { grid-template-columns: repeat(2,1fr); }
 }

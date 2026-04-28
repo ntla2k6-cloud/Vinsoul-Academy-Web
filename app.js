@@ -89,7 +89,7 @@ function showPage(id) {
     const oc = n.getAttribute('onclick') || '';
     if (oc.includes("'" + id + "'") || oc.includes('"' + id + '"')) n.classList.add('active');
   });
-  const map = { students: renderStudentTable, staff: renderStaffTable, dashboard: renderDashboard, revenue: renderRevenue, leads: renderLeadTable, classes: renderClassTable, schedule: renderSchedule, attendance: initAttendancePage, makeup: renderMakeupTable, consult: initConsultPage, accounts: renderAccountsPage };
+  const map = { students: renderStudentTable, staff: renderStaffTable, dashboard: renderDashboard, revenue: renderRevenue, leads: renderLeadTable, classes: renderClassTable, 'class-detail':()=>{}, schedule: renderSchedule, attendance: initAttendancePage, makeup: renderMakeupTable, consult: initConsultPage, accounts: renderAccountsPage };
   if (map[id]) map[id]();
 }
 function startAddStudent() { editStudentId = null; clearStudentForm(); showPage('add-student'); }
@@ -286,16 +286,29 @@ function closeCourseModal(e){if(e.target===document.getElementById('course-modal
 
 // ── STUDENTS ──
 function saveStudent(){
-  const g=id=>document.getElementById(id).value.trim?document.getElementById(id).value.trim():document.getElementById(id).value;
+  const g=id=>{const el=document.getElementById(id);return el?(el.value.trim?el.value.trim():el.value):'';};
   const name=g('f-name'),dob=g('f-dob'),parent=g('f-parent'),phone=g('f-phone'),
-        subject=g('f-subject'),pkg=g('f-package'),classid=document.getElementById('f-classid')?document.getElementById('f-classid').value:'',start=g('f-start'),end=g('f-end'),
+        subject=g('f-subject'),pkg=g('f-package'),
+        classid=Number(document.getElementById('f-classid')?document.getElementById('f-classid').value:'')||0,
+        start=g('f-start'),end=g('f-end'),
         payment=g('f-payment'),amount=g('f-amount'),paydate=g('f-paydate'),note=g('f-note');
-  if(!name||!parent||!phone||!subject||!start||!payment){showToast('Vui lòng điền đầy đủ các trường bắt buộc (*)',true);return;}
-  const obj={id:editStudentId||Date.now(),name,dob,parent,phone,subject,pkg,classid,start,end,payment,amount:Number(amount)||0,paydate,note};
-  if(editStudentId!==null){const i=students.findIndex(s=>s.id===editStudentId);if(i!==-1)students[i]=obj;editStudentId=null;}
-  else students.push(obj);
-  saveAsync().then(ok => {
-    if (ok) { showToast('Đã lưu học viên thành công!'); clearStudentForm(); showPage('students'); }
+  if(!name||!parent||!phone||!subject||!start||!payment){
+    showToast('Vui lòng điền đầy đủ các trường bắt buộc (*)',true);return;
+  }
+  const isEdit=editStudentId!==null;
+  const obj={id:isEdit?editStudentId:Date.now(),name,dob,parent,phone,subject,pkg,classid,
+             start,end,payment,amount:Number(amount)||0,paydate,note};
+  if(isEdit){
+    const i=students.findIndex(s=>s.id===editStudentId);
+    if(i!==-1)students[i]=obj; else{showToast('Không tìm thấy học viên!',true);return;}
+    editStudentId=null;
+  } else students.push(obj);
+  saveAsync().then(ok=>{
+    if(ok){
+      showToast(isEdit?'Đã cập nhật học viên thành công!':'Đã thêm học viên thành công!');
+      const back=window._addStudentForClassId; clearStudentForm(); window._addStudentForClassId=null;
+      if(!isEdit&&back) viewClassDetail(back); else showPage('students');
+    } else { if(!isEdit) students.pop(); }
   });
 }
 function clearStudentForm(){
@@ -357,6 +370,22 @@ function extractTotalSessions(pkg) {
   return m ? parseInt(m[1]) : 0;
 }
 
+
+function isExpiringSoon(s) {
+  if (!s.end) return false;
+  const d = Math.ceil((new Date(s.end) - new Date()) / (1000*60*60*24));
+  return d >= 0 && d <= 14;
+}
+function renderExpiryBanner() {
+  const el = document.getElementById('expiry-banner');
+  if (!el) return;
+  const exp = students.filter(s => isExpiringSoon(s) && s.subject !== 'Học Thử');
+  if (!exp.length) { el.style.display='none'; return; }
+  el.style.display='';
+  el.innerHTML = '<span style="font-weight:700;color:#dc2626;">⏰ '
+    + exp.length + ' học viên sắp hết khóa:</span> '
+    + exp.map(s=>'<span style="font-weight:600">'+s.name+'</span>').join(', ');
+}
 function renderStudentTable(){
   renderClassFilterBtns();
   renderSubjectFilterBtns();
@@ -368,7 +397,7 @@ function renderStudentTable(){
     if(studentFilter==='hoc-thu') mf=s.subject==='Học Thử';
     else if(studentFilter==='sap-het-khoa') mf=isExpiringSoon(s)&&s.subject!=='Học Thử';
     else if(studentFilter!=='all') mf=s.payment===studentFilter;
-    const mc=studentClassFilter==='all'||String(s.classid)===String(studentClassFilter);
+    const mc=studentClassFilter==='all'||Number(s.classid)===Number(studentClassFilter);
     const ms=studentSubjectFilter==='all'||s.subject===studentSubjectFilter||(studentSubjectFilter==='Vẽ'&&s.subject&&s.subject.startsWith('Vẽ'))||(studentSubjectFilter==='Ballet'&&s.subject&&s.subject.startsWith('Ballet'))||(studentSubjectFilter==='Luyện Thi'&&s.subject&&s.subject.startsWith('Luyện Thi'));
     return mq&&mf&&ms&&mc;
   });
@@ -400,7 +429,7 @@ function renderStudentTable(){
       <td>${s.parent}</td>
       <td>${s.phone}</td>
       <td style="font-weight:600;color:var(--navy)">${s.subject}${s.pkg?`<br><span style="font-size:10px;color:var(--muted);font-weight:400">${s.pkg}</span>`:''}</td>
-      <td>${(()=>{const cl=classes.find(c=>c.id===s.classid);return cl?`<span class='pos-badge'>[${cl.code}]<br>${cl.name}</span>`:'–';})()}</td>
+      <td>${(()=>{const cl=classes.find(c=>Number(c.id)===Number(s.classid));return cl?`<span class='pos-badge'>[${cl.code}]<br>${cl.name}</span>`:'–';})()}</td>
       <td style="font-size:11.5px">${fmtDate(s.start)}<br><span style="color:var(--muted)">→ ${fmtDate(s.end)}</span>${expiryTag}</td>
       <td>${pb(s.payment)}</td>
       <td style="font-weight:700;color:var(--gold)">${s.amount?fmt(s.amount):'–'}</td>
@@ -877,14 +906,16 @@ function saveClass() {
   if (!code || !name || !subject) { showToast('Vui lòng điền Mã Lớp, Tên Lớp và Khóa Học (*)', true); return; }
   if (classes.find(c => c.code === code && c.id !== editClassId)) { showToast('Mã lớp đã tồn tại!', true); return; }
   const schedule = getScheduleRows();
-  const obj = { id: editClassId || Date.now(), code, name, subject, teacher, room, note, schedule };
-  if (editClassId !== null) {
-    const i = classes.findIndex(c => c.id === editClassId);
-    if (i !== -1) classes[i] = obj;
-    editClassId = null;
-  } else classes.push(obj);
-  saveAsync().then(ok => {
-    if (ok) { showToast('Đã lưu lớp thành công!'); clearClassForm(); showPage('classes'); }
+  const isNew=editClassId===null;
+  const obj={id:isNew?Date.now():editClassId,code,name,subject,teacher,room,note,schedule};
+  if(!isNew){const i=classes.findIndex(c=>c.id===editClassId);if(i!==-1)classes[i]=obj;else{showToast('Không tìm thấy lớp!',true);return;}}
+  else classes.push(obj);
+  editClassId=null; const savedId=obj.id;
+  saveAsync().then(ok=>{
+    if(ok){
+      if(isNew){showToast('Đã tạo lớp thành công!');viewClassDetail(savedId);}
+      else{showToast('Đã cập nhật lớp thành công!');showPage('classes');}
+    } else { if(isNew) classes.pop(); }
   });
 }
 
@@ -931,7 +962,7 @@ function renderClassTable() {
     return;
   }
   tbody.innerHTML = filtered.map((c, i) => {
-    const hvCount = students.filter(s => s.classid === c.id).length;
+    const hvCount = students.filter(s => Number(s.classid) === Number(c.id)).length;
     const sched = (c.schedule || []).map(s => `${s.day} ${s.start}–${s.end}`).join('<br>') || '–';
     return `<tr>
       <td>${i+1}</td>
@@ -943,6 +974,7 @@ function renderClassTable() {
       <td style="font-size:11.5px">${c.room||'–'}</td>
       <td style="font-weight:700;color:var(--navy)">${hvCount}</td>
       <td><div class="action-btns">
+        <button class="btn-icon" onclick="viewClassDetail(${c.id})" title="Xem">👁</button>
         <button class="btn-icon" onclick="editClass(${c.id})" title="Sửa">✎</button>
         <button class="btn-icon del" onclick="deleteClass(${c.id})" title="Xóa">✕</button>
       </div></td>
@@ -975,7 +1007,7 @@ function renderSchedule() {
   const lookup = {};
   dayOrder.forEach(d => { lookup[d] = {}; });
   filteredClasses.forEach(c => {
-    const classStudents = students.filter(s => s.classid === c.id);
+    const classStudents = students.filter(s => Number(s.classid) === Number(c.id));
     (c.schedule||[]).forEach(s => {
       if (!s.day || !s.start) return;
       if (!lookup[s.day]) lookup[s.day] = {};
@@ -1983,26 +2015,30 @@ async function renderAccountsPage() {
     if (!r.ok) { wrap.innerHTML = '<div style="color:#D94F4F;font-size:13px;padding:10px;">Lỗi tải danh sách tài khoản</div>'; return; }
     const users = await r.json();
     const roleLabel = role => role === 'admin'
-      ? '<span style="background:#FFF3CD;color:#7a6000;border:1px solid #FFE08A;border-radius:6px;padding:2px 10px;font-size:11px;font-weight:700;">Quản trị viên</span>'
-      : '<span style="background:#E8F5E9;color:#2E7D32;border:1px solid #A5D6A7;border-radius:6px;padding:2px 10px;font-size:11px;font-weight:700;">Nhân viên</span>';
-    let html = `<table class="data-table" style="width:100%;">
-      <thead><tr><th>#</th><th>Tên đăng nhập</th><th>Họ tên</th><th>Phân quyền</th><th>Thao tác</th></tr></thead><tbody>`;
-    users.forEach((u, i) => {
-      html += `<tr>
-        <td>${i+1}</td>
-        <td style="font-weight:700;color:#234A5B;">${u.username}</td>
-        <td>${u.displayName}</td>
-        <td>${roleLabel(u.role)}</td>
-        <td>
-          <div class="action-btns">
-            <button class="btn-icon" onclick="openEditAccountModal(${u.id},'${u.username}','${u.displayName.replace(/'/g,"\'")}','${u.role}')" title="Sửa">✎</button>
-            <button class="btn-icon del" onclick="deleteAccount(${u.id},'${u.username}')" title="Xóa">✕</button>
-          </div>
-        </td>
-      </tr>`;
-    });
-    html += '</tbody></table>';
-    wrap.innerHTML = html;
+      ? '<span style="display:inline-block;background:#FFF3CD;color:#7a6000;border:1.5px solid #FFE08A;border-radius:20px;padding:4px 14px;font-size:11px;font-weight:700;white-space:nowrap;">Quản trị viên</span>'
+      : '<span style="display:inline-block;background:#E8F5E9;color:#2E7D32;border:1.5px solid #A5D6A7;border-radius:20px;padding:4px 14px;font-size:11px;font-weight:700;white-space:nowrap;">Nhân viên</span>';
+    const rows=users.map((u,i)=>`<tr>
+      <td style="width:48px;text-align:center;color:var(--muted);font-size:12px;font-weight:700;">${i+1}</td>
+      <td><div style="font-weight:700;color:var(--navy);font-size:13px;">${u.username}</div></td>
+      <td><div style="font-weight:600;font-size:13px;">${u.displayName}</div></td>
+      <td>${roleLabel(u.role)}</td>
+      <td style="width:100px;text-align:center;">
+        <div class="action-btns" style="justify-content:center;">
+          <button class="btn-icon" onclick="openEditAccountModal(${u.id},'${u.username}','${u.displayName.replace(/'/g,"\'")}','${u.role}')" title="Sửa">✎</button>
+          <button class="btn-icon del" onclick="deleteAccount(${u.id},'${u.username}')" title="Xóa">✕</button>
+        </div>
+      </td>
+    </tr>`).join('');
+    wrap.innerHTML=`<div class="table-wrap"><table style="min-width:500px;">
+      <thead><tr>
+        <th style="width:48px;text-align:center;">#</th>
+        <th>Tên Đăng Nhập</th>
+        <th>Họ Tên Hiển Thị</th>
+        <th>Phân Quyền</th>
+        <th style="width:100px;text-align:center;">Thao Tác</th>
+      </tr></thead>
+      <tbody>${rows}</tbody>
+    </table></div>`;
   } catch {
     wrap.innerHTML = '<div style="color:#D94F4F;font-size:13px;padding:10px;">Lỗi kết nối server</div>';
   }
@@ -2077,5 +2113,81 @@ async function deleteAccount(id, username) {
       showToast('Đã xóa tài khoản!');
       renderAccountsPage();
     } catch { showToast('Lỗi kết nối server', true); }
+  });
+}
+function viewClassDetail(classId){
+  const c=classes.find(x=>Number(x.id)===Number(classId));
+  if(!c){showPage('classes');return;}
+  const page=document.getElementById('page-class-detail');
+  if(!page)return;
+  const sched=(c.schedule||[]).map(s=>`<span class="pos-badge" style="font-size:11px;margin-right:4px;">${s.day} ${s.start}–${s.end}</span>`).join('')||'<span style="color:var(--muted)">Chưa có lịch</span>';
+  const cs=students.filter(s=>Number(s.classid)===Number(classId));
+  const pb=p=>p==='Đã Chuyển Khoản'?`<span class="badge badge-paid">CK</span>`:p==='Tiền Mặt'?`<span class="badge badge-cash">TM</span>`:`<span class="badge badge-unpaid">Chưa TT</span>`;
+  const rows=cs.length===0
+    ?`<tr><td colspan="7"><div class="empty-state"><div class="empty-icon">👤</div><div class="empty-text">Chưa có học viên nào trong lớp</div></div></td></tr>`
+    :cs.map((s,i)=>`<tr>
+      <td>${i+1}</td><td class="td-name">${s.name}</td>
+      <td>${s.parent||'–'}</td><td>${s.phone||'–'}</td>
+      <td style="font-weight:600;color:var(--navy)">${s.subject}${s.pkg?`<br><span style="font-size:10px;color:var(--muted)">${s.pkg}</span>`:''}</td>
+      <td>${pb(s.payment)}</td>
+      <td><div class="action-btns">
+        <button class="btn-icon" onclick="editStudent(${s.id})" title="Sửa">✎</button>
+        <button class="btn-icon del" onclick="removeStudentFromClass(${s.id},${classId})" title="Gỡ">✕</button>
+      </div></td></tr>`).join('');
+  page.innerHTML=`
+    <div class="page-header">
+      <div class="page-title">Chi Tiết <span>Lớp Học</span></div>
+      <div class="page-sub">[${c.code}] ${c.name} – ${c.subject}</div>
+    </div>
+    <div class="card" style="margin-bottom:14px;">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-bottom:16px;">
+        <div><div style="font-size:11px;color:var(--muted);margin-bottom:3px;">Mã Lớp</div><div style="font-weight:800;color:var(--navy);font-size:16px;">${c.code}</div></div>
+        <div><div style="font-size:11px;color:var(--muted);margin-bottom:3px;">Khóa Học</div><div style="font-weight:700;color:var(--navy)">${c.subject}</div></div>
+        <div><div style="font-size:11px;color:var(--muted);margin-bottom:3px;">Giáo Viên</div><div style="font-weight:600;">${c.teacher||'–'}</div></div>
+        <div><div style="font-size:11px;color:var(--muted);margin-bottom:3px;">Phòng</div><div style="font-weight:600;">${c.room||'–'}</div></div>
+        <div><div style="font-size:11px;color:var(--muted);margin-bottom:3px;">Số Học Viên</div><div style="font-weight:800;color:var(--gold);font-size:22px;">${cs.length}</div></div>
+      </div>
+      <div><div style="font-size:11px;color:var(--muted);margin-bottom:6px;">Lịch Học</div><div>${sched}</div></div>
+      ${c.note?`<div style="margin-top:10px;font-size:12px;color:var(--muted);border-top:1px solid var(--cream2);padding-top:10px;">Ghi chú: ${c.note}</div>`:''}
+    </div>
+    <div class="card">
+      <div class="toolbar" style="margin-bottom:16px;">
+        <div style="font-weight:700;font-size:15px;color:var(--navy)">Danh Sách Học Viên <span style="color:var(--gold)">(${cs.length})</span></div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <button class="btn btn-gold" onclick="addStudentToClass(${classId})">+ Thêm Học Viên</button>
+          <button class="btn btn-outline" onclick="editClass(${classId})">✎ Sửa Lớp</button>
+          <button class="btn btn-outline" onclick="showPage('classes')">← Danh Sách Lớp</button>
+        </div>
+      </div>
+      <div class="table-wrap"><table>
+        <thead><tr><th>#</th><th>Họ Tên</th><th>Phụ Huynh</th><th>SĐT</th><th>Khóa Học</th><th>Học Phí</th><th>Thao Tác</th></tr></thead>
+        <tbody>${rows}</tbody>
+      </table></div>
+    </div>`;
+  showPage('class-detail');
+}
+function addStudentToClass(classId){
+  editStudentId=null; clearStudentForm();
+  const cls=classes.find(c=>Number(c.id)===Number(classId));
+  showPage('add-student');
+  setTimeout(()=>{
+    if(cls){
+      const se=document.getElementById('f-subject');
+      if(se){se.value=cls.subject;populatePackages('');}
+      setTimeout(()=>{
+        const ce=document.getElementById('f-classid'); if(ce) ce.value=classId;
+        const te=document.getElementById('form-title');
+        if(te) te.innerHTML=`Thêm Học Viên vào <span>[${cls.code}] ${cls.name}</span>`;
+        window._addStudentForClassId=classId;
+      },60);
+    }
+  },60);
+}
+function removeStudentFromClass(studentId,classId){
+  const s=students.find(x=>x.id===studentId); if(!s)return;
+  confirmDelete('gỡ học viên '+s.name+' khỏi lớp',()=>{
+    const i=students.findIndex(x=>x.id===studentId);
+    if(i!==-1) students[i]={...students[i],classid:0};
+    saveAsync().then(ok=>{if(ok){showToast('Đã gỡ '+s.name+' khỏi lớp.');viewClassDetail(classId);}});
   });
 }

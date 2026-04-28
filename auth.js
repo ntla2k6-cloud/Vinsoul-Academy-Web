@@ -48,7 +48,7 @@ const VS_AUTH = {
       const nameEl = document.getElementById('sidebar-user-name');
       const roleEl = document.getElementById('sidebar-user-role');
       if (nameEl) nameEl.textContent = user.displayName || user.username;
-      if (roleEl) roleEl.textContent = user.role === 'admin' ? 'Quan tri vien' : 'Nhan vien';
+      if (roleEl) roleEl.textContent = user.role === 'admin' ? 'Quản Trị Viên' : 'Nhân Viên';
 
       const appEl = document.getElementById('vs-app');
       if (appEl) appEl.style.display = 'block';
@@ -133,23 +133,23 @@ const VS_AUTH = {
         <div class="vsl-logo">
           <div class="vsl-logo-badge">VS</div>
           <div class="vsl-title">VINSOUL</div>
-          <div class="vsl-sub">Am Nhac & Nghe Thuat – Quan Ly</div>
+          <div class="vsl-sub">Âm Nhạc & Nghệ Thuật – Quản Lý</div>
         </div>
         <div id="vsl-error" class="vsl-error"></div>
-        <label class="vsl-label">Ten dang nhap</label>
-        <input id="vsl-u" class="vsl-input" type="text" placeholder="Nhap ten dang nhap"
+        <label class="vsl-label">Tên đăng nhập</label>
+        <input id="vsl-u" class="vsl-input" type="text" placeholder="Nhập tên đăng nhập"
           autocomplete="username" autocapitalize="none" spellcheck="false" />
-        <label class="vsl-label">Mat khau</label>
+        <label class="vsl-label">Mật khẩu</label>
         <div class="vsl-pass-wrap">
-          <input id="vsl-p" class="vsl-input" type="password" placeholder="Nhap mat khau"
+          <input id="vsl-p" class="vsl-input" type="password" placeholder="Nhập mật khẩu"
             autocomplete="current-password" />
           <span class="vsl-pass-eye" id="vsl-eye" onclick="
             const i=document.getElementById('vsl-p');
             i.type=i.type==='password'?'text':'password';
-            this.textContent=i.type==='password'?'Hien':'An';
-          ">Hien</span>
+            this.textContent=i.type==='password'?'Hiện':'Ẩn';
+          ">Hiện</span>
         </div>
-        <button id="vsl-btn" class="vsl-btn" onclick="VS_AUTH._doLogin()">DANG NHAP</button>
+        <button id="vsl-btn" class="vsl-btn" onclick="VS_AUTH._doLogin()">ĐĂNG NHẬP</button>
         <div class="vsl-footer">Vinsoul Academy</div>
       </div>
     `;
@@ -177,11 +177,11 @@ const VS_AUTH = {
     if (errEl) { errEl.style.display = 'none'; errEl.textContent = ''; }
 
     if (!u || !p) {
-      if (errEl) { errEl.textContent = 'Vui long nhap ten dang nhap va mat khau'; errEl.style.display = 'block'; }
+      if (errEl) { errEl.textContent = 'Vui lòng nhập tên đăng nhập và mật khẩu'; errEl.style.display = 'block'; }
       return;
     }
 
-    if (btn) { btn.disabled = true; btn.textContent = 'Dang xac thuc...'; }
+    if (btn) { btn.disabled = true; btn.textContent = 'Đang xác thực...'; }
 
     try {
       const res  = await _originalFetch('/api/auth/login', {
@@ -192,8 +192,8 @@ const VS_AUTH = {
       const data = await res.json();
 
       if (!res.ok) {
-        if (errEl) { errEl.textContent = data.error || 'Dang nhap that bai'; errEl.style.display = 'block'; }
-        if (btn) { btn.disabled = false; btn.textContent = 'DANG NHAP'; }
+        if (errEl) { errEl.textContent = data.error || 'Đăng nhập thất bại'; errEl.style.display = 'block'; }
+        if (btn) { btn.disabled = false; btn.textContent = 'ĐĂNG NHẬP'; }
         return;
       }
 
@@ -202,8 +202,8 @@ const VS_AUTH = {
       location.reload();
 
     } catch {
-      if (errEl) { errEl.textContent = 'Loi ket noi den server'; errEl.style.display = 'block'; }
-      if (btn) { btn.disabled = false; btn.textContent = 'DANG NHAP'; }
+      if (errEl) { errEl.textContent = 'Lỗi kết nối đến server'; errEl.style.display = 'block'; }
+      if (btn) { btn.disabled = false; btn.textContent = 'ĐĂNG NHẬP'; }
     }
   }
 };

@@ -556,6 +556,8 @@
   </div>
 </div>
 
+<div id="page-class-detail" class="page"></div>
+
 <!-- ─── ADD/EDIT CLASS ─── -->
 <div id="page-add-class" class="page">
   <div class="page-header">
@@ -887,23 +889,20 @@
   </div>
 </div>
 
-
 <!-- ─── QUẢN TRỊ TÀI KHOẢN ─── -->
 <div id="page-accounts" class="page">
-  <div class="welcome-banner">
-    <div>
-      <div class="welcome-title">Quản Trị <span>Tài Khoản</span></div>
-      <div class="welcome-sub">Cấp phát và phân quyền tài khoản đăng nhập hệ thống</div>
-    </div>
+  <div class="page-header">
+    <div class="page-title">Quản Trị <span>Tài Khoản</span></div>
+    <div class="page-sub">Cấp phát và phân quyền tài khoản đăng nhập hệ thống</div>
   </div>
-  <div class="card" style="margin-bottom:20px;">
-    <div class="section-row">
-      <div class="card-title">Danh Sách Tài Khoản</div>
+  <div class="card">
+    <div class="toolbar" style="margin-bottom:18px;">
+      <div style="font-weight:800;font-size:15px;color:var(--navy);">Danh Sách Tài Khoản</div>
       <button class="btn btn-gold" onclick="openCreateAccountModal()">+ Cấp Tài Khoản Mới</button>
     </div>
-    <div id="accounts-table-wrap" style="margin-top:16px;overflow-x:auto;"></div>
+    <div id="accounts-table-wrap"></div>
   </div>
-</div>
+</div> 
 
 <!-- ── MODAL CẤP TÀI KHOẢN ── -->
 <div class="modal-backdrop" id="account-modal" onclick="if(event.target===this)closeAccountModal()">
